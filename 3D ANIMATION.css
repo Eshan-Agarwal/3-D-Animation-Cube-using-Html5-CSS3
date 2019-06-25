@@ -1,0 +1,152 @@
+BODY {
+BACKGROUND-COLOR: #eee;
+}
+header{
+	TEXT-ALIGN: CENTER ;
+	FONT-SIZE: 18PX;
+	COLOR: RGBA(25, 25, 25, 1);
+}
+.wrap{
+MARGIN-TOP: 150PX;
+PERSPECTIVE: 2000PX;
+PERSPECTIVE-ORIGIN: 50% 50%;
+BACKGROUND-SIZE: 80PX 80PX;
+}
+.cube{
+MARGIN: AUTO;
+POSITION: RELATIVE;
+HEIGHT: 200PX;
+WIDTH: 200PX;
+transform-style:preserve-3D;
+}
+.cube div{
+POSITION: ABSOLUTE;
+PADDING: 10PX;
+BOX-SIZING: BORDER-BOX;
+HEIGHT: 100%;
+WIDTH: 100%;
+OPACITY: 0.9;
+BORDER: SOLID 1PX #eee;
+COLOR: #ee2020;
+FONT: 10PX ARIAL;
+TRANSITION: TRANSFORM 0.2S ;
+}
+
+.front {
+               
+background-color: rgba(255, 0, 0, .6);
+                
+transform: translateZ(100px);
+            }
+
+            
+.back {
+                
+background-color: #2f1aef;
+                
+transform: translateZ(-100px) rotateY(180deg);
+            }
+
+            
+.right {
+                
+background-color: rgba( 29, 11, 172, 0.173 );
+                
+transform: rotateY(-270deg) translateX(100px);
+                
+transform-origin: top right;
+            }
+
+            
+.left {
+                
+background-color: rgba(255, 255, 0, .6);
+                
+transform: rotateY(270deg) translateX(-100px);
+                
+transform-origin: center left;
+            }
+
+            
+.top {
+                
+background-color: rgba(255, 0, 255, .6);
+                
+transform: rotateX(-270deg) translateY(-100px);
+                
+transform-origin: top center;
+            }
+
+            
+.bottom {
+                
+background-color: rgba(0, 0, 0, .6);
+               
+transform: rotateX(270deg) translateY(100px);
+                
+transform-origin: bottom center;
+            }
+
+           
+
+ @keyframes rotate {
+                
+from {
+                    
+transform: rotateX(0deg) rotateY(0deg);
+                }
+
+                
+to {
+                    
+transform: rotateX(360deg) rotateY(360deg);
+                }
+            
+}
+
+            
+.cube {
+                
+animation: rotate 20s infinite linear;
+            }
+
+            
+.wrap:hover .front {
+                
+transform: translateZ(200px);
+            }
+
+            
+.wrap:hover .back {
+                
+transform: translateZ(-200px) rotateY(180deg);
+            }
+
+            
+.wrap:hover .right {
+                
+transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+            }
+
+            
+.wrap:hover .left {
+                
+transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+            }
+
+            
+.wrap:hover .top {
+                
+transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+            }
+
+            
+.wrap:hover .bottom {
+                
+transform: rotateX(270deg) translateZ(100px) translateY(100px);
+            }
+.PYTHON{
+    text-align: center;
+    background-color: #20eee7
+    
+}

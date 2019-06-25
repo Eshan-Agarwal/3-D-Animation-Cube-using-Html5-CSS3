@@ -1,0 +1,1 @@
+alert("POINT ON CUBE")
